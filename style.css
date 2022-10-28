@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: bisque;
+    border-image-source: url("exam kit/logo.png");
+}
+.header { 
+    border-color: bisque;
+    border-image-source: url("exam kit/logo.png");
+min-height: 100vh;
+width: 100%;
+background-image: url("exam kit/banner-img.png");
+background-position:center;
+background-size: cover;
+position: relative;
+}
+nav{
+    display:flex;
+    padding:3% 5%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav h2{
+    font-size: 35px;
+    text-align: center;
+    margin: 2px 2px;
+}
+.nav-menu{
+    flex: 1;
+    text-align:center;
+    font-size: 20px;
+}
+.nav-menu ul li{
+    list-style-type: style none;
+    display:inline-block;
+    margin:0px 12px;
+    position:relative;
+}
+.nav-menu ul li a{
+    text-decoration:double;
+    color:black;
+    flex: 1;
+}
+.nav-menu ul li a:hover{
+    color:blueviolet;
+    text-decoration:underline;
+
+}
+.nav-menu ul li::after{
+    content:'';
+    display:block;
+    width :0%;
+    height: 2px;
+    background-color:blueviolet;
+    transition: width .3;
+}   
+.nav-menu ul li:hover::after{
+    width :100%;
+    transition: width .3s; 
+}
