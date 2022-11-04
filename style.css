@@ -5,10 +5,11 @@
 body{
     background-color: bisque;
     border-image-source: url("exam kit/logo.png");
+    text-align: justify;
 }
+
+
 .header { 
-    border-color: bisque;
-    border-image-source: url("exam kit/logo.png");
 min-height: 100vh;
 width: 100%;
 background-image: url("exam kit/banner-img.png");
@@ -21,31 +22,36 @@ nav{
     padding:3% 5%;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(196, 180, 165);
+
 
 }
-nav h2{
+nav p h2{
     font-size: 35px;
     text-align: center;
     margin: 2px 2px;
 }
 .nav-menu{
+    position: fixed;
+    float: right;
     flex: 1;
-    text-align:center;
+    text-align:top-right;
     font-size: 20px;
 }
 .nav-menu ul li{
-    list-style-type: style none;
+    list-style-type: style type none;
     display:inline-block;
     margin:0px 12px;
     position:relative;
 }
 .nav-menu ul li a{
-    text-decoration:double;
+    float:left;
+    text-decoration:dotted;
     color:black;
     flex: 1;
 }
 .nav-menu ul li a:hover{
-    color:blueviolet;
+    color:crimson;
     text-decoration:underline;
 
 }
@@ -54,10 +60,17 @@ nav h2{
     display:block;
     width :0%;
     height: 2px;
-    background-color:blueviolet;
+    background-color:crimson;
     transition: width .3;
 }   
 .nav-menu ul li:hover::after{
     width :100%;
     transition: width .3s; 
+}
+.card-text{
+    font-size: 3rem;
+    color:#ff9800;
+    border:none;
+
+
 }
